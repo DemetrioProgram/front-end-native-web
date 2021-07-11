@@ -1,0 +1,22 @@
+ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 200px;
+  overflow: auto;
+  position: fixed;
+  list-style-type: none;
+  background-color: #f1f1f1;
+}
+
+li a {
+  color: #000;
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: white;
+  background-color: #555;
+}

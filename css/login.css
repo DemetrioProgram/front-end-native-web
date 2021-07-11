@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body {
+    background-color: #2980b9;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+label {
+    float: left;
+    font-size: 1.3em;
+    font-family: roboto;
+    padding-bottom: 10px;
+    animation-name: move;
+    animation-duration: 1s;
+}
+
+#styledBorder {
+    overflow: hidden;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #FFF;
+/*
+    To change button border
+    border-top-left-radius: 4em;
+    border-top-right-radius: 8em;
+    border-bottom-right-radius: 4em;
+    border-bottom-left-radius: 8em;
+*/
+}
+
+#grouper, p{    
+    padding-top: 5%;
+    padding-left: 38%;
+    padding-right: 38%;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+}
+
+form button {
+    width: 80%;
+    border: none;
+    padding: 5px;
+    font-size: 1em;
+    animation: move;
+    border-radius: 10px;
+    font-family: roboto;
+    animation-duration: 1.5s;
+    background-color: #B5BCE0;
+}
+
+form button:hover {
+    width: 100%;
+    background-color: #2980b9;
+    background-color: #27ae60;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border-radius: 2px;
+    border: 2px solid lightgray;
+}
+
+form fieldset:nth-child(1) {
+    animation: move 500ms;
+/*    animation-duration: 500ms;*/
+}
+
+form fieldset:nth-child(2) {
+    animation: move;
+    animation-duration: 1s;
+}
+
+input:focus {
+    background-color: lightgray;
+}
+
+form {
+    animation-name: open;
+    animation-duration: 1s;
+}
+
+@keyframes open {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+        transform: translateX(-30%);
+    } to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}

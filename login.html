@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title>Login</title>
+</head>
+    
+    
+<body>
+    
+        <h1>Manage your web site</h1>
+    
+        <form name="formLogin" action="home.html" onsubmit="return validate()">
+            <div id="grouper">
+                <div id="styledBorder">
+                    <fieldset>
+                        <label for="inputUser">Username</label><br />
+                        <input id="inputUser" name="inputUser" type="text" />
+                    </fieldset>
+                    <fieldset>
+                        <label for="inputPass">Password</label><br />
+                        <input id="inputPass" name="inputPass" type="password" />
+                    </fieldset>
+                    <button type="submit" >Login</button>
+                </div>
+            </div>
+        </form>
+    
+<script	type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.all.js'></script>
+<script	type="text/javascript" src='js/login.js'></script>
+</body>
+</html>
