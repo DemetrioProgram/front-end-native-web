@@ -1,5 +1,5 @@
 const validateSession = () => {
-    const user = localStorage.getItem('user');
+    const user = sessionStorage.getItem('user');
     if (!user) {
         window.location.href = 'login.html';
     }

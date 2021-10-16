@@ -8,14 +8,12 @@ const validate = () => {
         switch (true) {
             case username === 'your user' && password === 'your password':
                 const user = { username, password };
-                localStorage.setItem('user',JSON.stringify(user));
+                sessionStorage.setItem('user',JSON.stringify(user));
                 return true;
-            break;
                 
             default:
                 swal('Ops', 'Digite o usuario e a senha validos.', 'error');
                 return false;
-            break;
         }
     }
 }
